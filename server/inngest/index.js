@@ -1,8 +1,11 @@
 import { Inngest } from "inngest";
 import User from "../models/User.js";
 
-export const inngest = new Inngest({ id: "movie-ticket-booking" });
-
+// Create a client to save user data to a database
+export const inngest = new Inngest({
+  id: "movie-ticket-booking",
+});
+ // inngest Function to save user data to a database
 const syncUserCreation = inngest.createFunction(
   { id: "sync-user-from-clerk" },
   { event: "clerk/user.created" },
