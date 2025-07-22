@@ -38,6 +38,7 @@ export const addShow = async (req, res) => {
       ]);
       const movieApiData = movieDetailsResponse.data;
       const movieCreditData = movieCreditsResponse.data;
+      console.log("CAST DATA FROM TMDB ➤", movieCreditData.cast.slice(0, 5));
 
       const movieDetails = {
         _id: movieId,

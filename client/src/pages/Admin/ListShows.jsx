@@ -8,7 +8,7 @@ import { useAppContext } from "../../context/AppContext";
 const ListShows = () => {
   const currency = import.meta.env.VITE_CURRENCY;
 
-  const { axios, getToken, user } = useAppContext();
+  const { axios, getToken, user, image_base_url } = useAppContext();
 
   const [shows, setShows] = useState([]);
   const [loading, setLoading] = useState(true);

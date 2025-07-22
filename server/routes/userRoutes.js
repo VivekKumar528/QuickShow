@@ -5,6 +5,6 @@ const userRouter = express.Router();
 
 userRouter.get("/bookings", getUserBookings);
 userRouter.post("/update-favourite", updateFavourite);
-userRouter.get("/favourite", getFavourites);
+userRouter.get("/favourites", getFavourites);
 
 export default userRouter;

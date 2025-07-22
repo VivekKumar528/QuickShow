@@ -1,0 +1,8 @@
+### Update Favourite Movie
+POST http://localhost:3000/api/user/update-favourite
+Content-Type: application/json
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+{
+  "movieId": "1374534"
+}
